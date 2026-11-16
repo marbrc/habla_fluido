@@ -1,3 +1,2 @@
 # habla_fluido
-
-A new Flutter project.
+metodología de adquisición de segundas lenguas que justifica cada decisión de diseño.
