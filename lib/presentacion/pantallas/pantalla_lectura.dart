@@ -33,7 +33,7 @@ class _EstadoPantalla extends State<PantallaLectura> {
               Panel(
                 padding: const EdgeInsets.all(22),
                 child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  const Etiqueta('📖 Lee con calma'),
+                  const Etiqueta('Lee con calma'),
                   const SizedBox(height: 12),
                   Text(t.titulo,
                       style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w800, color: Paleta.ciruela)),
@@ -67,7 +67,7 @@ class _EstadoPantalla extends State<PantallaLectura> {
                     const SizedBox(width: 14),
                     Expanded(
                       child: Text(
-                        vm.correctas == t.preguntas.length ? '✨ ¡Perfecto!' : '¡Buen intento! Sigue leyendo 💜',
+                        vm.correctas == t.preguntas.length ? '¡Perfecto!' : '¡Buen intento! Sigue leyendo',
                         style: const TextStyle(fontWeight: FontWeight.w600, color: Paleta.ciruela),
                       ),
                     ),

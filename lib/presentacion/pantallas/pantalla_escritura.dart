@@ -34,7 +34,7 @@ class _EstadoPantalla extends State<PantallaEscritura> {
               Panel(
                 color: Paleta.lila,
                 child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  const Etiqueta('✍️ Tema de hoy', fondo: Colors.white),
+                  const Etiqueta('Tema de hoy', fondo: Colors.white),
                   const SizedBox(height: 10),
                   Text(vm.tema,
                       style: const TextStyle(fontSize: 19, fontWeight: FontWeight.w700, color: Paleta.ciruela)),
@@ -81,7 +81,7 @@ class _EstadoPantalla extends State<PantallaEscritura> {
                   Panel(
                     color: Paleta.rosaClaro,
                     padding: const EdgeInsets.all(14),
-                    child: Text('🎀 Reto: ${r.siguientePregunta}',
+                    child: Text('Reto: ${r.siguientePregunta}',
                         style: const TextStyle(color: Paleta.ciruela, fontWeight: FontWeight.w600)),
                   ),
                 ],

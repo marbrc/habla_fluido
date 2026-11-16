@@ -24,17 +24,23 @@ class _HablaFluidoAppState extends State<HablaFluidoApp> {
         title: 'Habla Fluido',
         debugShowCheckedModeBanner: false,
         theme: TemaHabla.claro,
+        // En pantallas anchas (compu) la app no se estira: se centra como en un teléfono.
+        builder: (context, child) => ColoredBox(
+          color: Paleta.lavanda,
+          child: Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 560),
+              child: child,
+            ),
+          ),
+        ),
         home: FutureBuilder<void>(
           future: _inicio,
           builder: (_, s) => s.connectionState == ConnectionState.done
               ? PantallaInicio(deps: deps)
               : const Scaffold(
                   body: Center(
-                    child: Column(mainAxisSize: MainAxisSize.min, children: [
-                      Text('🎀', style: TextStyle(fontSize: 40)),
-                      SizedBox(height: 12),
-                      CircularProgressIndicator(),
-                    ]),
+                    child: CircularProgressIndicator(),
                   ),
                 ),
         ),

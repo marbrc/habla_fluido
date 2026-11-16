@@ -38,7 +38,7 @@ class _EstadoPantalla extends State<PantallaConversacion> {
             CircleAvatar(
               radius: 18,
               backgroundColor: Paleta.lila,
-              child: Text('🎀', style: TextStyle(fontSize: 16)),
+              child: Icon(Icons.school_rounded, size: 20, color: Paleta.violeta),
             ),
             SizedBox(width: 10),
             Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -66,7 +66,7 @@ class _EstadoPantalla extends State<PantallaConversacion> {
                 if (vm.ocupado)
                   const Padding(
                     padding: EdgeInsets.only(left: 6, top: 4),
-                    child: Text('escribiendo… ✍️', style: TextStyle(color: Paleta.suave)),
+                    child: Text('escribiendo…', style: TextStyle(color: Paleta.suave)),
                   ),
                 for (final c in vm.ultimasCorrecciones)
                   Container(
@@ -77,7 +77,7 @@ class _EstadoPantalla extends State<PantallaConversacion> {
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                      Text('✏️ ${c.original}  →  ${c.corregido}',
+                      Text('${c.original}  →  ${c.corregido}',
                           style: const TextStyle(fontWeight: FontWeight.w700, color: Paleta.ciruela)),
                       const SizedBox(height: 4),
                       Text(c.explicacion, style: const TextStyle(color: Paleta.texto, height: 1.35)),

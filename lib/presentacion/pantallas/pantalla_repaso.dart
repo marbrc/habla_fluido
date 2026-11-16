@@ -33,7 +33,7 @@ class _EstadoPantalla extends State<PantallaRepaso> {
                 child: Padding(
                   padding: EdgeInsets.all(32),
                   child: Column(mainAxisSize: MainAxisSize.min, children: [
-                    Text('🎀', style: TextStyle(fontSize: 52)),
+                    Icon(Icons.check_circle_outline_rounded, size: 56, color: Paleta.violeta),
                     SizedBox(height: 12),
                     Text('¡Todo al día!',
                         style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800, color: Paleta.ciruela)),
@@ -90,7 +90,7 @@ class _EstadoPantalla extends State<PantallaRepaso> {
                     child: FilledButton(
                       style: FilledButton.styleFrom(backgroundColor: Paleta.rosa, foregroundColor: Paleta.ciruela),
                       onPressed: () => vm.calificar(5),
-                      child: const Text('Fácil 🎀'),
+                      child: const Text('Fácil'),
                     ),
                   ),
                 ]),

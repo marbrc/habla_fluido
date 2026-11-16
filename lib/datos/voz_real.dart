@@ -9,7 +9,7 @@ import '../dominio/excepciones.dart';
 import '../dominio/voz.dart';
 
 /// Voz real: texto→voz con flutter_tts y voz→texto con speech_to_text.
-/// ⚠️ El reconocimiento lo hace el servicio de voz del sistema (Google/Apple):
+/// OJO: el reconocimiento lo hace el servicio de voz del sistema (Google/Apple):
 /// el audio puede salir del teléfono. Avisa al estudiante en tu aviso de privacidad.
 class VozReal implements Voz {
   final FlutterTts _tts = FlutterTts();

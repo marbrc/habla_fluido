@@ -42,19 +42,11 @@ class PantallaInicio extends StatelessWidget {
                 padding: const EdgeInsets.all(22),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(26),
-                  gradient: const LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    colors: [Paleta.violeta, Color(0xFF9B7BC9), Color(0xFFD9A3C4)],
-                  ),
+                  color: Paleta.violeta,
                 ),
                 child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  const Row(children: [
-                    Text('Habla Fluido',
-                        style: TextStyle(color: Colors.white, fontSize: 26, fontWeight: FontWeight.w800)),
-                    SizedBox(width: 6),
-                    Text('🎀', style: TextStyle(fontSize: 22)),
-                  ]),
+                  const Text('Habla Fluido',
+                      style: TextStyle(color: Colors.white, fontSize: 26, fontWeight: FontWeight.w800)),
                   const SizedBox(height: 4),
                   const Text('Tu práctica de inglés de hoy',
                       style: TextStyle(color: Color(0xFFF3EAFB), fontSize: 15)),
@@ -62,7 +54,7 @@ class PantallaInicio extends StatelessWidget {
                   Row(children: [
                     _Insignia(titulo: 'Nivel', valor: vm.nivel.etiqueta),
                     const SizedBox(width: 10),
-                    _Insignia(titulo: 'Racha', valor: '🔥 ${vm.progreso.racha}'),
+                    _Insignia(titulo: 'Racha', valor: '${vm.progreso.racha} ${vm.progreso.racha == 1 ? "día" : "días"}'),
                     const SizedBox(width: 10),
                     _Insignia(titulo: 'Repasos', valor: '$pendientes'),
                   ]),
@@ -74,7 +66,7 @@ class PantallaInicio extends StatelessWidget {
                 Panel(
                   color: Paleta.rosaClaro,
                   child: Row(children: [
-                    const Text('🎉', style: TextStyle(fontSize: 28)),
+                    const Icon(Icons.workspace_premium_rounded, color: Paleta.violeta, size: 30),
                     const SizedBox(width: 12),
                     Expanded(
                       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -98,7 +90,7 @@ class PantallaInicio extends StatelessWidget {
                 Etiqueta('$total min'),
               ]),
               const SizedBox(height: 4),
-              const Text('Más tiempo a lo que te cuesta más ✨', style: TextStyle(color: Paleta.suave)),
+              const Text('Más tiempo a lo que te cuesta más', style: TextStyle(color: Paleta.suave)),
               const SizedBox(height: 12),
               for (final b in plan) ...[
                 _TarjetaHabilidad(
@@ -137,7 +129,7 @@ class PantallaInicio extends StatelessWidget {
                           const Text('Repaso espaciado',
                               style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 16)),
                           Text(
-                            pendientes == 0 ? 'Todo al día 💜' : '$pendientes frase(s) esperándote',
+                            pendientes == 0 ? 'Todo al día' : '$pendientes frase(s) esperándote',
                             style: const TextStyle(color: Color(0xFFD9CCEB)),
                           ),
                         ]),
@@ -220,7 +212,7 @@ class _TarjetaHabilidad extends StatelessWidget {
                   Wrap(spacing: 8, runSpacing: 4, crossAxisAlignment: WrapCrossAlignment.center, children: [
                     Text(habilidad.nombre,
                         style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 16, color: Paleta.ciruela)),
-                    if (refuerzo) const Etiqueta('refuerzo 🎀', fondo: Paleta.rosaClaro, color: Color(0xFFB0577D)),
+                    if (refuerzo) const Etiqueta('refuerzo', fondo: Paleta.rosaClaro, color: Color(0xFFB0577D)),
                   ]),
                   const SizedBox(height: 8),
                   ClipRRect(

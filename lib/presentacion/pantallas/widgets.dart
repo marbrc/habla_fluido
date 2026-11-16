@@ -27,7 +27,7 @@ class PalabrasColoreadas extends StatelessWidget {
           const SizedBox(width: 12),
           Expanded(
             child: Text(
-              resultado.aprobado ? '✨ ¡Muy bien!' : '🔁 Inténtalo otra vez',
+              resultado.aprobado ? '¡Muy bien!' : 'Inténtalo otra vez',
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
@@ -105,7 +105,7 @@ class Aviso extends StatelessWidget {
             borderRadius: BorderRadius.circular(16),
           ),
           child: Row(children: [
-            const Text('🎀', style: TextStyle(fontSize: 18)),
+            const Icon(Icons.info_outline_rounded, color: Paleta.violeta, size: 20),
             const SizedBox(width: 10),
             Expanded(child: Text(texto!, style: const TextStyle(color: Paleta.ciruela))),
           ]),
@@ -174,7 +174,7 @@ class TarjetaFrase extends StatelessWidget {
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(14)),
               child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                const Text('💡'),
+                const Icon(Icons.lightbulb_outline_rounded, size: 18, color: Paleta.violeta),
                 const SizedBox(width: 8),
                 Expanded(child: Text(consejo!, style: const TextStyle(color: Paleta.texto, height: 1.35))),
               ]),
@@ -191,7 +191,7 @@ class SinContenido extends StatelessWidget {
   Widget build(BuildContext context) => const Center(
         child: Padding(
           padding: EdgeInsets.all(32),
-          child: Text('🎀 Aún no hay ejercicios para tu nivel.\n¡Pronto agregaremos más!',
+          child: Text('Aún no hay ejercicios para tu nivel.\n¡Pronto agregaremos más!',
               textAlign: TextAlign.center, style: TextStyle(color: Paleta.suave, fontSize: 16)),
         ),
       );
