@@ -97,4 +97,6 @@ metodología de adquisición de segundas lenguas que justifica cada decisión de
 <img width="1209" height="452" alt="image" src="https://github.com/user-attachments/assets/ad9d4475-961d-42be-ac02-03f42a6b0ba8" />
 
 
+## Para probar el tutor simulado
+Escribe en Conversación o Escritura: `I am agree with you` o `He go to school` y me corrige 
 
