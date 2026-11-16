@@ -100,3 +100,23 @@ metodología de adquisición de segundas lenguas que justifica cada decisión de
 ## Para probar el tutor simulado
 Escribe en Conversación o Escritura: `I am agree with you` o `He go to school` y me corrige 
 
+## PANTALLAS
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/8909c7cd-89e8-42ba-88a7-670fa3738750" />
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/c907e803-2513-4455-a424-5f7b6d360a3a" />
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/2ad950ea-d39a-48ab-ba4a-ce792acaac90" />
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/2768cb6f-de25-4c97-96a7-081691133167" />
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/b46af21c-68a3-409e-b7c3-4d4959beecae" />
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/ced231a3-4f20-4121-bd9a-b8ab01d54f37" />
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/71f44871-22d0-40a8-a2b4-ea433a368750" />
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/7c584dbd-47c4-4d08-98e5-4be0579d147d" />
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/21520f14-3015-4d6c-a24f-f2f064f6f0d4" />
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/bb817566-1cc8-4eec-a981-56ae8506db8a" />
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/915682f9-4854-4429-924e-2c08b2188fb6" />
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/a6880a93-bb45-43ea-a3e2-d9df1b0d432a" />
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/1c64ce19-0d8c-4f2a-8436-aa20af838009" />
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/37838146-0536-4974-af43-de95c711e02b" />
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/362122ac-cc55-44b3-8529-112edc41d821" />
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/bfad5e2b-6a80-4866-81b2-eb7256d9883c" />
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/620832bf-a40b-4d61-ae2b-443b88864e10" />
+
+
